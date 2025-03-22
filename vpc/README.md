@@ -28,7 +28,7 @@ AWS (Amazon Web Services) provides multiple layers of security to protect resour
 Overview
 This project sets up an AWS EC2 instance in a public subnet with controlled access through security measures such as a Network ACL (NACL) and a Security Group. The instance is accessible via an Internet Gateway, allowing external actors to communicate with it while ensuring network security.
 
-Architecture
+## Architecture
 Internet Gateway: Provides internet access to the public subnet.
 
 Network ACL (NACL): Acts as a firewall at the subnet level, controlling inbound and outbound traffic.
