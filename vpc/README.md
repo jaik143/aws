@@ -20,8 +20,26 @@ AWS (Amazon Web Services) provides multiple layers of security to protect resour
         They are stateless, which means that if an inbound rule allows traffic, the corresponding outbound traffic must be explicitly allowed using a separate outbound rule.
         Changes made to NACL rules may take some time to propagate to all the resources using the associated subnet.
 
-## Project Implemented in the video
+## Project VPC With Ec2 instance
 
 
 ![Screenshot 2023-06-29 at 12 14 32 AM](https://github.com/iam-veeramalla/aws-devops-zero-to-hero/assets/43399466/30bbc9e8-6502-438b-8adf-ece8b81edce9)
+
+Overview
+This project sets up an AWS EC2 instance in a public subnet with controlled access through security measures such as a Network ACL (NACL) and a Security Group. The instance is accessible via an Internet Gateway, allowing external actors to communicate with it while ensuring network security.
+
+Architecture
+Internet Gateway: Provides internet access to the public subnet.
+
+Network ACL (NACL): Acts as a firewall at the subnet level, controlling inbound and outbound traffic.
+
+Route Table: Defines routes for internet-bound traffic.
+
+Security Group: Acts as a firewall at the EC2 instance level, defining what traffic is allowed.
+
+EC2 Instance: The virtual machine hosted in the AWS cloud.
+
+
+
+
 
